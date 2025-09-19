@@ -92,15 +92,22 @@
   </section>
 
   <!-- القسم 5: انضم لنا -->
-  <section id="join">
-    <h2>انضم لنا</h2>
-    <form>
-      <input type="text" placeholder="اسمك" required>
-      <input type="email" placeholder="ايميلك" required>
-      <textarea placeholder="اكتب رسالتك" required></textarea>
-      <button type="submit">إرسال</button>
-    </form>
-  </section>
+  <section id="join" style="background-color: #4C2C72; color: white; padding: 50px; text-align: center;">
+  <h2>انضم إلينا</h2>
+  <form action="https://formspree.io/f/xkgvdrak" method="POST" style="max-width: 400px; margin: auto; text-align: right;">
+    <label for="name">الاسم</label>
+    <input type="text" id="name" name="name" required style="width: 100%; padding: 10px; margin: 10px 0;">
+
+    <label for="email">البريد الإلكتروني</label>
+    <input type="email" id="email" name="email" required style="width: 100%; padding: 10px; margin: 10px 0;">
+
+    <label for="message">رسالتك</label>
+    <textarea id="message" name="message" required style="width: 100%; padding: 10px; margin: 10px 0;"></textarea>
+
+    <button type="submit" style="padding: 10px 20px; background-color: white; color: #4C2C72; border: none; cursor: pointer;">إرسال</button>
+  </form>
+</section>
+
 
 <!-- Footer -->
 <footer>
@@ -115,6 +122,7 @@
   <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
